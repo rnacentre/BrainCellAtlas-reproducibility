@@ -1,0 +1,11 @@
+﻿term,p-value,q-value,negLOG10(p-value),negLOG10(q-value),Cluster
+Synapse Pruning (GO:0098883),5.04E-07,0.001063895,6.297795288,2.973101374,Microglia
+Regulation Of Dopamine Metabolic Process (GO:0042053),1.27E-05,0.008957512,4.89538526,2.0478126,Microglia
+Positive Regulation Of Tumor Necrosis Factor-Mediated Signaling Pathway (GO:1903265),2.49E-05,0.013170374,4.60303582,1.880401898,Microglia
+Positive Regulation Of Cytokine Production (GO:0001819),6.09E-05,0.025712803,4.215574495,1.589850586,Microglia
+Immunoglobulin Production Involved In Immunoglobulin-Mediated Immune Response (GO:0002381),8.33E-05,0.025991412,4.079580564,1.585170131,Microglia
+Axon Guidance (GO:0007411),1.50E-10,3.28E-07,9.823908741,6.484126156,Microglia(PCDH9high)
+Axonogenesis (GO:0007409),3.63E-10,3.96E-07,9.440093375,6.402304814,Microglia(PCDH9high)
+Nervous System Development (GO:0007399),1.20E-09,8.77E-07,8.920818754,6.057000407,Microglia(PCDH9high)
+Neuron Projection Guidance (GO:0097485),1.91E-09,1.04E-06,8.718966633,5.982966661,Microglia(PCDH9high)
+Regulation Of Neuron Projection Development (GO:0010975),1.52E-08,6.63E-06,7.818156412,5.178486472,Microglia(PCDH9high)
