@@ -18,7 +18,7 @@ The repository is organized as follows:
 
 - `Scripts`: this folder contains codes for supplementary figures, supporting scripts and utilities used in the analysis pipelines. These scripts provide additional functionality and can be used independently or in combination with the notebooks.
 
-Please note that the data and results folders, which are necessary for running the code, are not included some of the large files in this repository. However, they will soon be uploaded to figshare. If you require access to a specific file, please feel free to contact us.
+Please note that some of the large files in the data and results folders, which are necessary for running the code, are not included in this repository due to their large size. However, they will soon be uploaded to figshare. If you require access to a specific file, please feel free to contact us.
 
 ## In-house annotation tool
 For label transfer to the Brain Cell Atlas, the documentation of scAnnot is available at https://github.com/rnacentre/scAnnot.
