@@ -18,17 +18,7 @@ The repository is organized as follows:
 
 - `Scripts`: this folder contains codes for supplementary figures, supporting scripts and utilities used in the analysis pipelines. These scripts provide additional functionality and can be used independently or in combination with the notebooks.
 
-## Code Organization
-
-The code in this repository is organized into the following five folders:
-
-- Main Figures: Includes all the code related to generating the main figures of the Brain Cell Atlas project.
-- Data Curation: Contains code for preprocessing and curating the raw data used in the analysis.
-- BCA Atlas Analysis: Provides code for generating extended figures, supplementary figures, and supplementary tables associated with the Brain Cell Atlas.
-- NPC Analysis: Includes code specifically dedicated to the analysis of neural progenitor cells.
-- Microglia Analysis: Includes code focused on the analysis of microglia cells.
-
-Please note that the data and results folders, which are necessary for running the code, are not included in this repository due to their large size. However, they will soon be uploaded to figshare. If you require access to a specific file, please feel free to contact us.
+Please note that the data and results folders, which are necessary for running the code, are not included some of the large files in this repository. However, they will soon be uploaded to figshare. If you require access to a specific file, please feel free to contact us.
 
 ## In-house annotation tool
 For label transfer to the Brain Cell Atlas, the documentation of scAnnot is available at https://github.com/rnacentre/scAnnot.
@@ -43,7 +33,7 @@ Thank you for your interest in our work. We hope you find the code and resources
 
 
 ## Issues
-If you encounter any issues or have questions about the code or analysis, please open an issue on the GitHub repository. We appreciate your feedback and will address any concerns as soon as possible.
+If you encounter any issues or have questions about the code or analysis, please open an issue on the GitHub repository. 
 
 
 
