@@ -4,6 +4,8 @@ This repository contains Jupyter notebooks and codes to reproduce the results an
 
 "Brain Cell Atlas: An Integrative Ensemble of Cell Transcriptomes Across Human Brain Regions"
 
+The web portal of Brain Cell Atlas together with all the datasets are publicly available at [www.braincellatlas.org](http://www.braincellatlas.org) and [mirror.braincellatlas.org](https://mirror.braincellatlas.org).
+
 ## Repository Structure
 
 The repository is organized as follows:
@@ -39,8 +41,9 @@ Chen, X. et al. Brain Cell Atlas: An integrative ensemble of cell transcriptomes
 
 Thank you for your interest in our work. We hope you find the code and resources provided here useful in reproducing and building upon the findings of the Brain Cell Atlas project.
 
-**Let me know if you have any other questions!**
 
+## Issues
+If you encounter any issues or have questions about the code or analysis, please open an issue on the GitHub repository. We appreciate your feedback and will address any concerns as soon as possible.
 
 
 
