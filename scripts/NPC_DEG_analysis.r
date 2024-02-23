@@ -1,3 +1,68 @@
+#edgeR
+library(Libra)
+library(MAST)
+library(Seurat)
+library(dplyr)
+library(EnhancedVolcano)
+library(stringr)
+library(tidyverse)
+library(edgeR)
+library(readxl)
+library(ggvenn)
+
+edgeR_DE <- function(counts, group, design, cont, n_top_genes = Inf, method = 'TMM') {
+  y <- DGEList(counts = counts, group = group) %>%
+    calcNormFactors(method = method) %>%
+    estimateDisp(design)
+  
+  fit <- glmFit(y, design = design)
+  if (is.null(cont)) {
+      test <- glmLRT(fit)
+  } else {
+        contrast <- makeContrasts(contrasts = cont, levels = design)
+        test <- glmLRT(fit, contrast = contrast)
+  }
+  res <- topTags(test, n = n_top_genes) %>%
+    as.data.frame() %>%
+    rownames_to_column('gene')
+  
+  return(res)
+}
+
+npc_meta = readRDS('npc/data/annot.rds')
+i = 'NPC'
+npc$sample_group = ifelse(npc$state==i, i, "Others")
+npc$sample_group = factor(npc$sample_group, levels = c('Others', i))
+mat = to_pseudobulk(npc, cell_type_col = "group", label_col = "sample_group", replicate_col = 'sampleID')
+
+group = npc@meta.data %>% distinct(sampleID, sample_group, .keep_all = T) %>% select(sampleID, sample_group) %>% remove_rownames()
+rownames(group) = paste0(group$sampleID,':',group$sample_group)
+group
+
+counts = mat[[1]][rownames(group)]
+counts                 
+                 
+group$sampleID = as.character(group$sampleID)
+group$sampleID %>% unique
+                 
+# for TMM
+design <- model.matrix(~
+                        sampleID+
+                       sample_group, data = group)
+
+resTmm = edgeR_DE(counts, group = group$group, design, method = 'TMM', cont = 'sample_groupNPC')
+write.csv(resTmm, 'npc/results/npc_rmdonor_DEG.csv')
+
+                 
+
+
+
+
+
+                 
+                 
+
+
 library(ggplot2)
 library(org.Hs.eg.db)
 library(clusterProfiler)
@@ -94,66 +159,3 @@ degwcx <- lapply(names(table(obs$select)),function(s)FindMarkers(ad,ident.1 = s,
 names(degwcx)<-names(table(obs$select))
 
 
-#edgeR
-library(Libra)
-library(MAST)
-library(Seurat)
-library(dplyr)
-library(EnhancedVolcano)
-library(stringr)
-library(tidyverse)
-library(edgeR)
-library(readxl)
-library(ggvenn)
-
-edgeR_DE <- function(counts, group, design, cont, n_top_genes = Inf, method = 'TMM') {
-  y <- DGEList(counts = counts, group = group) %>%
-    calcNormFactors(method = method) %>%
-    estimateDisp(design)
-  
-  fit <- glmFit(y, design = design)
-  if (is.null(cont)) {
-      test <- glmLRT(fit)
-  } else {
-        contrast <- makeContrasts(contrasts = cont, levels = design)
-        test <- glmLRT(fit, contrast = contrast)
-  }
-  res <- topTags(test, n = n_top_genes) %>%
-    as.data.frame() %>%
-    rownames_to_column('gene')
-  
-  return(res)
-}
-
-npc_meta = readRDS('npc/data/annot.rds')
-i = 'NPC'
-npc$sample_group = ifelse(npc$state==i, i, "Others")
-npc$sample_group = factor(npc$sample_group, levels = c('Others', i))
-mat = to_pseudobulk(npc, cell_type_col = "group", label_col = "sample_group", replicate_col = 'sampleID')
-
-group = npc@meta.data %>% distinct(sampleID, sample_group, .keep_all = T) %>% select(sampleID, sample_group) %>% remove_rownames()
-rownames(group) = paste0(group$sampleID,':',group$sample_group)
-group
-
-counts = mat[[1]][rownames(group)]
-counts                 
-                 
-group$sampleID = as.character(group$sampleID)
-group$sampleID %>% unique
-                 
-# for TMM
-design <- model.matrix(~
-                        sampleID+
-                       sample_group, data = group)
-
-resTmm = edgeR_DE(counts, group = group$group, design, method = 'TMM', cont = 'sample_groupNPC')
-write.csv(resTmm, 'npc/results/npc_rmdonor_DEG.csv')
-
-                 
-
-
-
-
-
-                 
-                 
