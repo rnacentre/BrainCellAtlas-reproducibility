@@ -10,7 +10,7 @@ The web portal of Brain Cell Atlas together with all the datasets are publicly a
 
 The repository is organized as follows:
 
-- `notebooks`: This folder contains Jupyter notebooks that cover all the code related to generating the main figures of the Brain Cell Atlas project. Each notebook focuses on One main figure, making it easy to navigate and reproduce specific results.
+- `notebooks`: This folder contains Jupyter notebooks that cover all the code related to generating the main figures and the extended data figures of the Brain Cell Atlas project. Each notebook focuses on one figure, making it easy to navigate and reproduce specific results.
 
 - `data`: This folder contains some input data for running the code in the notebooks. Due to the store limitation, some of the large data files are not included in the repository. However, instructions are provided on how to obtain the required data.
 
