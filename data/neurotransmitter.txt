@@ -1,0 +1,104 @@
+gene	Receptor_type
+GRIA1	Glutamate
+GRIA2	Glutamate
+GRIA3	Glutamate
+GRIA4	Glutamate
+GRID1	Glutamate
+GRID2	Glutamate
+GRID2IP	Glutamate
+GRIK1	Glutamate
+GRIK2	Glutamate
+GRIK3	Glutamate
+GRIK4	Glutamate
+GRIK5	Glutamate
+GRIN1	Glutamate
+GRIN2A	Glutamate
+GRIN2B	Glutamate
+GRIN2C	Glutamate
+GRIN2D	Glutamate
+GRIN3A	Glutamate
+GRIN3B	Glutamate
+GRINA	Glutamate
+GRIP1	Glutamate
+GRIP2	Glutamate
+GRIPAP1	Glutamate
+GRM1	Glutamate
+GRM2	Glutamate
+GRM3	Glutamate
+GRM4	Glutamate
+GRM5	Glutamate
+GRM6	Glutamate
+GRM7	Glutamate
+GRM8	Glutamate
+GLRA1	Glycine
+GLRA2	Glycine
+GLRA3	Glycine
+GLRA4	Glycine
+ADRA1A	Epinephrine and Norepinephrine
+ADRA1B	Epinephrine and Norepinephrine
+ADRA1D	Epinephrine and Norepinephrine
+ADRA2A	Epinephrine and Norepinephrine
+ADRA2B	Epinephrine and Norepinephrine
+ADRA2C	Epinephrine and Norepinephrine
+ADRB1	Epinephrine and Norepinephrine
+ADRB2	Epinephrine and Norepinephrine
+ADRB3	Epinephrine and Norepinephrine
+HTR1A	5-HT
+HTR1B	5-HT
+HTR1D	5-HT
+HTR1E	5-HT
+HTR1F	5-HT
+HTR2A	5-HT
+HTR2B	5-HT
+HTR2C	5-HT
+HTR3A	5-HT
+HTR3B	5-HT
+HTR3C	5-HT
+HTR3D	5-HT
+HTR3E	5-HT
+HTR4	5-HT
+HTR5A	5-HT
+HTR6	5-HT
+HTR7	5-HT
+GABBR1	GABA
+GABBR2	GABA
+GABRA1	GABA
+GABRA2	GABA
+GABRA3	GABA
+GABRA4	GABA
+GABRA5	GABA
+GABRA6	GABA
+GABRB1	GABA
+GABRB2	GABA
+GABRB3	GABA
+GABRD	GABA
+GABRE	GABA
+GABRG1	GABA
+GABRG2	GABA
+GABRG3	GABA
+GABRP	GABA
+GABRQ	GABA
+GABRR1	GABA
+GABRR2	GABA
+GABRR3	GABA
+CHRM1	Acetylcholine
+CHRM2	Acetylcholine
+CHRM3	Acetylcholine
+CHRM4	Acetylcholine
+CHRM5	Acetylcholine
+CHRNA1	Acetylcholine
+CHRNA2	Acetylcholine
+CHRNA3	Acetylcholine
+CHRNA4	Acetylcholine
+CHRNA5	Acetylcholine
+CHRNA6	Acetylcholine
+CHRNA7	Acetylcholine
+CHRNA9	Acetylcholine
+CHRNA10	Acetylcholine
+CHRNB1	Acetylcholine
+CHRNB2	Acetylcholine
+CHRNB3	Acetylcholine
+CHRNB4	Acetylcholine
+CHRND	Acetylcholine
+CHRNE	Acetylcholine
+CHRNG	Acetylcholine
